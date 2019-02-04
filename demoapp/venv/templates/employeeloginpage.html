@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<form action="/login" method="POST">
+<h1>Please login</h1>
+    Username<br>
+    <input type="text" name="username"><br>
+    Password<br>
+    <input type="password" name="password"><br>
+    <br>
+    <input type="submit" name="btnSubmit" value="Log in"><br>
+  </form>
+  <h5>Not registered?</h5><a href="{{ url_for('Registeremployees')}}">Sign up here</a><br>
+{% endblock %}

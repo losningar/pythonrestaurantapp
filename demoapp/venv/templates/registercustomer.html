@@ -1,0 +1,24 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<form action="/customers/register/post" method="POST">
+    First name:<br>
+    <input type="text" name="Firstname"><br>
+    Last name:<br>
+    <input type="text" name="Lastname"><br>
+    Email:<br>
+    <input type="text" name="Email"><br>
+    Adress:<br>
+    <input type="text" name="Adress"><br>
+    Postcode:<br>
+    <input type="text" name="Postcode"><br>
+    City:<br>
+    <input type="text" name="City"><br>
+    Username:<br>
+    <input type="text" name="Username"><br>
+    Password:<br>
+    <input type="text" name="Password"><br>
+    <br>
+    <input type="submit" name="btnSubmit" value="save">
+  </form>
+  {% endblock %}

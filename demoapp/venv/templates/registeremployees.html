@@ -1,0 +1,20 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<form action="/employees/register/post" method="POST">
+    First name:<br>
+    <input type="text" name="Firstname"><br>
+    Last name:<br>
+    <input type="text" name="Lastname"><br>
+    Email:<br>
+    <input type="text" name="Email"><br>
+    Permissions:<br>
+    <input type="text" name="Permissions"><br>
+    Username:<br>
+    <input type="text" name="Username"><br>
+    Password:<br>
+    <input type="password" name="Password"><br>
+    <br>
+    <input type="submit" name="btnSubmit" value="save">
+  </form>
+  {% endblock %}

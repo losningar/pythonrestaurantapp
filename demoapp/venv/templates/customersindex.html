@@ -1,0 +1,27 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 10px;
+    }
+    </style>
+<table>
+    <tr>
+      <th>Firstname</th>
+      <th>Lastname</th> 
+      <th>Email</th>
+    </tr>
+    {% for customer in allcustomers %}
+    <tr>
+      <td>{{customer.firstname}}</td>
+      <td>{{customer.lastname}}</td>
+      <td>{{customer.email}}</td>
+    </tr>
+    {% endfor %}
+  </table>
+  {% endblock %}

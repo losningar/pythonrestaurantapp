@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<form action="/menu/additemspost" method="POST">
+    Dish type:<br>
+    <input type="text" name="dish"><br>
+    Dish name:<br>
+    <input type="text" name="dishName"><br>
+    Dish price:<br>
+    <input type="text" name="dishPrice"><br>
+    Dish Size:<br>
+    <input type="text" name="dishSize"><br>
+    <input type="submit" name="btnSubmit" value="save"><br>
+  </form>
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<h1>Dashboard</h1>
+<h5>Welcome {{session.user}}</h5>
+<h3>Manage</h3>
+<a href="{{ url_for('Registeremployees')}}">Employees/ADMIN</a><br>
+<a href="{{ url_for('Registercustomers')}}">Customers/ADMIN</a><br>
+<a href="{{ url_for('MenuAddItem')}}">Menu/ADMIN</a><br>
+<h3>Show</h3>
+<a href="{{ url_for('Registeremployees')}}">TO DO //Employees </a><br> 
+<a href="{{ url_for('GetCustomers')}}">Customers</a><br>
+<a href="{{ url_for('GetMenu')}}">Items on menu</a><br>
+{% endblock %}
